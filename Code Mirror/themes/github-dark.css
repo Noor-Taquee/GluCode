@@ -1,0 +1,123 @@
+#app.github-dark {
+    --font-color: rgb(169, 169, 175);
+    --primary-bg: rgb(39, 39, 43);
+    --secondary-bg: rgb(32, 32, 34);
+}
+
+#app.github-dark .CodeMirror-guttermarker,
+#app.github-dark .CodeMirror-guttermarker-subtle,
+#app.github-dark .CodeMirror-linenumber {
+    color: var(--font-color);
+}
+
+#app.github-dark .CodeMirror-cursor {
+    border-left: 1px solid #fc0
+}
+
+#app.github-dark div.CodeMirror-selected {
+    background: rgba(97, 97, 97, .2)
+}
+
+.cm-s-github-dark.CodeMirror-focused div.CodeMirror-selected {
+    background: rgba(97, 97, 97, .2)
+}
+
+#app.github-dark .CodeMirror-line::selection,
+#app.github-dark .CodeMirror-line>span::selection,
+#app.github-dark .CodeMirror-line>span>span::selection {
+    background: rgba(128, 203, 196, .2)
+}
+
+#app.github-dark .CodeMirror-line::-moz-selection,
+#app.github-dark .CodeMirror-line>span::-moz-selection,
+#app.github-dark .CodeMirror-line>span>span::-moz-selection {
+    background: rgba(128, 203, 196, .2)
+}
+
+#app.github-dark .CodeMirror-activeline-background {
+    background: rgba(0, 0, 0, .5)
+}
+
+#app.github-dark .cm-keyword {
+    color: rgb(204, 44, 44);
+}
+
+#app.github-dark .cm-operator {
+    color: rgb(204, 44, 44);
+}
+
+#app.github-dark .cm-variable-2 {
+    color: #eff
+}
+
+#app.github-dark .cm-type,
+#app.github-dark .cm-variable-3 {
+    color: #f07178
+}
+
+#app.github-dark .cm-builtin {
+    color: #ffcb6b
+}
+
+#app.github-dark .cm-atom {
+    color: rgb(142, 72, 233)
+}
+
+#app.github-dark .cm-number {
+    color: #ff3939
+}
+
+#app.github-dark .cm-def {
+    color: rgb(82, 137, 240);
+}
+
+#app.github-dark .cm-string {
+    color: rgb(131, 180, 219);
+}
+
+#app.github-dark .cm-string-2 {
+    color: #f07178
+}
+
+#app.github-dark .cm-comment {
+    color: rgb(114, 114, 114);
+}
+
+#app.github-dark .cm-variable {
+    color: rgb(205, 200, 240)
+}
+
+#app.github-dark .cm-tag {
+    color: #ff5370
+}
+
+#app.github-dark .cm-meta {
+    color: #ffcb6b
+}
+
+#app.github-dark .cm-attribute {
+    color: #c792ea
+}
+
+#app.github-dark .cm-property {
+    color: rgb(224, 209, 195);
+}
+
+#app.github-dark .cm-qualifier {
+    color: #decb6b
+}
+
+#app.github-dark .cm-type,
+#app.github-dark .cm-variable-3 {
+    color: #decb6b
+}
+
+#app.github-dark .cm-error {
+    color: #fff;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+#app.github-dark .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: #fff !important
+}

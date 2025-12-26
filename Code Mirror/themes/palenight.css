@@ -1,0 +1,123 @@
+#app.palenight {
+    --font-color: rgb(215, 190, 255);
+    --primary-bg: rgb(49, 44, 65);
+    --secondary-bg: rgb(60, 54, 75);
+}
+
+#app.palenight .CodeMirror-guttermarker,
+#app.palenight .CodeMirror-guttermarker-subtle,
+#app.palenight .CodeMirror-linenumber {
+    color: var(--font-color);
+}
+
+#app.palenight .CodeMirror-cursor {
+    border-left: 1px solid #fc0
+}
+
+#app.palenight div.CodeMirror-selected {
+    background: rgba(97, 97, 97, .2)
+}
+
+.cm-s-palenight.CodeMirror-focused div.CodeMirror-selected {
+    background: rgba(97, 97, 97, .2)
+}
+
+#app.palenight .CodeMirror-line::selection,
+#app.palenight .CodeMirror-line>span::selection,
+#app.palenight .CodeMirror-line>span>span::selection {
+    background: rgba(128, 203, 196, .2)
+}
+
+#app.palenight .CodeMirror-line::-moz-selection,
+#app.palenight .CodeMirror-line>span::-moz-selection,
+#app.palenight .CodeMirror-line>span>span::-moz-selection {
+    background: rgba(128, 203, 196, .2)
+}
+
+#app.palenight .CodeMirror-activeline-background {
+    background: rgba(0, 0, 0, .5)
+}
+
+#app.palenight .cm-keyword {
+    color: #c792ea
+}
+
+#app.palenight .cm-operator {
+    color: #89ddff
+}
+
+#app.palenight .cm-variable-2 {
+    color: #eff
+}
+
+#app.palenight .cm-type,
+#app.palenight .cm-variable-3 {
+    color: #f07178
+}
+
+#app.palenight .cm-builtin {
+    color: #ffcb6b
+}
+
+#app.palenight .cm-atom {
+    color: #f78c6c
+}
+
+#app.palenight .cm-number {
+    color: #ff5370
+}
+
+#app.palenight .cm-def {
+    color: #82aaff
+}
+
+#app.palenight .cm-string {
+    color: #c3e88d
+}
+
+#app.palenight .cm-string-2 {
+    color: #f07178
+}
+
+#app.palenight .cm-comment {
+    color: #545454
+}
+
+#app.palenight .cm-variable {
+    color: rgb(205, 200, 240)
+}
+
+#app.palenight .cm-tag {
+    color: #ff5370
+}
+
+#app.palenight .cm-meta {
+    color: #ffcb6b
+}
+
+#app.palenight .cm-attribute {
+    color: #c792ea
+}
+
+#app.palenight .cm-property {
+    color: #c792ea
+}
+
+#app.palenight .cm-qualifier {
+    color: #decb6b
+}
+
+#app.palenight .cm-type,
+#app.palenight .cm-variable-3 {
+    color: #decb6b
+}
+
+#app.palenight .cm-error {
+    color: #fff;
+    background-color: #ff5370
+}
+
+#app.palenight .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: #fff !important
+}

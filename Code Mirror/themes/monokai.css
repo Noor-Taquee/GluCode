@@ -1,0 +1,123 @@
+#app.monokai {
+    --font-color: rgb(226, 202, 188);
+    --primary-bg: rgb(51, 48, 45);
+    --secondary-bg: rgb(78, 70, 60);
+}
+
+#app.monokai .CodeMirror-guttermarker,
+#app.monokai .CodeMirror-guttermarker-subtle,
+#app.monokai .CodeMirror-linenumber {
+    color: var(--font-color);
+}
+
+#app.monokai .CodeMirror-cursor {
+    border-left: 1px solid #fc0
+}
+
+#app.monokai div.CodeMirror-selected {
+    background: rgba(97, 97, 97, .2)
+}
+
+.cm-s-monokai.CodeMirror-focused div.CodeMirror-selected {
+    background: rgba(97, 97, 97, .2)
+}
+
+#app.monokai .CodeMirror-line::selection,
+#app.monokai .CodeMirror-line>span::selection,
+#app.monokai .CodeMirror-line>span>span::selection {
+    background: rgba(128, 203, 196, .2)
+}
+
+#app.monokai .CodeMirror-line::-moz-selection,
+#app.monokai .CodeMirror-line>span::-moz-selection,
+#app.monokai .CodeMirror-line>span>span::-moz-selection {
+    background: rgba(128, 203, 196, .2)
+}
+
+#app.monokai .CodeMirror-activeline-background {
+    background: rgba(0, 0, 0, .5)
+}
+
+#app.monokai .cm-keyword {
+    color: rgb(63, 198, 231)
+}
+
+#app.monokai .cm-operator {
+    color: #89ddff
+}
+
+#app.monokai .cm-variable-2 {
+    color: #eff
+}
+
+#app.monokai .cm-type,
+#app.monokai .cm-variable-3 {
+    color: #f07178
+}
+
+#app.monokai .cm-builtin {
+    color: #ffcb6b
+}
+
+#app.monokai .cm-atom {
+    color: rgb(142, 72, 233)
+}
+
+#app.monokai .cm-number {
+    color: #ff3939
+}
+
+#app.monokai .cm-def {
+    color: rgb(110, 209, 52)
+}
+
+#app.monokai .cm-string {
+    color: #c59335;
+}
+
+#app.monokai .cm-string-2 {
+    color: #f07178
+}
+
+#app.monokai .cm-comment {
+    color: #545454
+}
+
+#app.monokai .cm-variable {
+    color: rgb(205, 200, 240)
+}
+
+#app.monokai .cm-tag {
+    color: #ff5370
+}
+
+#app.monokai .cm-meta {
+    color: #ffcb6b
+}
+
+#app.monokai .cm-attribute {
+    color: #c792ea
+}
+
+#app.monokai .cm-property {
+    color: rgb(224, 209, 195);
+}
+
+#app.monokai .cm-qualifier {
+    color: #decb6b
+}
+
+#app.monokai .cm-type,
+#app.monokai .cm-variable-3 {
+    color: #decb6b
+}
+
+#app.monokai .cm-error {
+    color: #fff;
+    background-color: #ff5370
+}
+
+#app.monokai .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: #fff !important
+}

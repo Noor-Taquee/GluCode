@@ -1,0 +1,54 @@
+.CodeMirror-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    width: 60%;
+    z-index: 15;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-bg);
+    color: var(--font-color);
+    border-radius: 10px;
+}
+
+.CodeMirror-dialog-top {
+    margin: 10px 10px auto auto;
+}
+
+.CodeMirror-dialog-bottom {
+    margin: auto 10px 10px auto;
+}
+
+.CodeMirror-dialog input {
+    border: none;
+    outline: none;
+    background: 0 0;
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 8px;
+    font: var(--primary-font);
+    color: var(--font-color);
+    font-family: monospace;
+    background: var(--primary-bg);
+}
+
+.CodeMirror-dialog button {
+    font-size: 70%
+}
+
+label.CodeMirror-search-label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CodeMirror-search-hint {
+    display: none;
+    color: var(--font-color) !important;
+    opacity: 0.5 !important;
+}

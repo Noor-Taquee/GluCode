@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CB3X8WY35"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1CB3X8WY35');
+  </script>
+  <meta name="google-site-verification" content="sCuHQ2Lt1OuPoKxz0M01KXE0nZlSZvXyjHgl6tro-54" />
+  <meta name="description" content="An online code editor">
+  <meta name="robots" content="follow,index">
+  <meta name="author" content="Noor Taquee">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+  <link rel="icon" href="src/favicon.ico">
+  <link rel="manifest" href="src/site.webmanifest">
+  <title>Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Code Mirror/assets/code-mirror.css">
+  <link rel="stylesheet" href="Code Mirror/addons/matchesonscrollbar.css">
+  <link rel="stylesheet" href="Code Mirror/addons/show-hint.css">
+  <link rel="stylesheet" href="Code Mirror/addons/dialog.css">
+  <link id="palenight" rel="stylesheet" href="Code Mirror/themes/palenight.css">
+  <link id="monokai" rel="stylesheet" href="Code Mirror/themes/monokai.css">
+  <link id="github-dark" rel="stylesheet" href="Code Mirror/themes/github-dark.css">
+</head>
+
+<body id="app" class="palenight">
+  <div id="app-wrapper">
+    <div id="message-div" style="display: none;">
+      <p id="message-text"></p>
+    </div>
+    <div id="inner-app">
+      <div id="editor-tab" class="inner-app-tab">
+        <div id="sidebar">
+          <div id="sidebar-header">
+            <button id="new-file-btn" class="toggle-btn"><i class="ph-bold ph-file-plus"></i></button>
+            <button id="close-sidebar-btn" class="toggle-btn"><i class="ph-bold ph-x"></i></button>
+          </div>
+          <div id="sidebar-content" class="content">
+            <div id="files-list">
+            </div>
+          </div>
+        </div>
+        <div id="editor-wrapper">
+          <div class="top-bar" id="editor-top-bar">
+            <button id="sidebar-btn" class="toggle-btn"><i class="ph-bold ph-list"></i></button>
+            <div id="file-title-div">
+              <p id="file-title"><span id="save-indicator" style="display: none;">*</span></p>
+            </div>
+            <button id="save-btn" class="toggle-btn"><i class="ph-fill ph-floppy-disk"></i></button>
+            <button id="run-btn" class="toggle-btn disabled"><i class="ph-fill ph-play"></i></button>
+            <button id="settings-btn" class="toggle-btn"><i class="ph-bold ph-gear-fine"></i></button>
+          </div>
+          <div id="main-area">
+            <div id="code-area">
+              <textarea id="editor"></textarea>
+            </div>
+            <div id="utility-area">
+              <button id="undo-btn" class="utility-btn"><i class="ph-bold ph-arrow-counter-clockwise"></i></button>
+              <button id="redo-btn" class="utility-btn"><i class="ph-bold ph-arrow-clockwise"></i></button>
+              <button id="replace-btn" class="utility-btn"><i class="ph-bold ph-repeat"></i></button>
+              <button id="find-btn" class="utility-btn"><i class="ph-bold ph-magnifying-glass"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="helper.js"></script>
+  <script src="Code Mirror/assets/code-mirror.js"></script>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+  <script id="cm-mode-python" src="Code Mirror/languages/python-support.js"></script>
+  <script id="cm-mode-sql" src="Code Mirror/languages/sql-support.js"></script>
+  <script src="codeMirror-5 integration.js"></script>
+  <script src="script.js"></script>
+  <script src="fileHandling.js"></script>
+</body>
+
+</html>

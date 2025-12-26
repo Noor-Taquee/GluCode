@@ -1,0 +1,10 @@
+{
+  "name": "GluCode",
+  "short_name": "glucode",
+  "description": "Code anytime, from anywhere.",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "minimal-ui"],
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "icons": []
+}
