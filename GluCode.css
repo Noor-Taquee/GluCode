@@ -1,0 +1,105 @@
+#app.GluCode {
+    /* Base */
+    --font-color: rgb(170, 178, 168);
+    --primary-bg: rgb(34, 36, 32);
+    --secondary-bg: rgb(28, 30, 27);
+    --selection-bg: rgba(120, 160, 120, 0.18);
+    --active-line-bg: rgba(0, 0, 0, 0.55);
+
+    /* Cursor */
+    --cursor-color: rgb(170, 220, 150);
+
+    /* Syntax – green-anchored */
+    --keyword: rgb(170, 220, 150);      /* primary green */
+    --operator: rgb(150, 200, 140);
+    --variable: rgb(200, 215, 200);
+    --variable-2: rgb(175, 200, 170);
+    --variable-3: rgb(200, 220, 170);
+    --type: rgb(185, 215, 160);
+
+    /* Accents */
+    --builtin: rgb(210, 200, 140);      /* glucose-yellow */
+    --atom: rgb(160, 180, 220);         /* cool contrast */
+    --number: rgb(180, 210, 160);
+    --definition: rgb(140, 190, 170);
+
+    /* Strings & text */
+    --string: rgb(150, 210, 190);
+    --string-2: rgb(170, 200, 160);
+    --comment: rgb(120, 135, 120);
+
+    /* Structural */
+    --tag: rgb(155, 210, 175);
+    --meta: rgb(190, 220, 160);
+    --attribute: rgb(165, 200, 175);
+    --property: rgb(190, 210, 180);
+    --qualifier: rgb(175, 215, 160);
+
+    /* Errors & highlights */
+    --error-fg: #ffffff;
+    --error-bg: rgba(255, 80, 80, 0.25);
+    --match-bracket: rgb(190, 230, 170);
+}
+
+
+
+.CodeMirror-guttermarker,
+.CodeMirror-guttermarker-subtle,
+.CodeMirror-linenumber {
+    color: var(--font-color);
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid var(--cursor-color);
+}
+
+div.CodeMirror-selected,
+.cm-s-GluCode.CodeMirror-focused div.CodeMirror-selected {
+    background: var(--selection-bg);
+}
+
+.CodeMirror-line::selection,
+.CodeMirror-line > span::selection,
+.CodeMirror-line > span > span::selection,
+.CodeMirror-line::-moz-selection,
+.CodeMirror-line > span::-moz-selection,
+.CodeMirror-line > span > span::-moz-selection {
+    background: rgba(128, 203, 196, 0.2);
+}
+
+.CodeMirror-activeline-background {
+    background: var(--active-line-bg);
+}
+
+/* Syntax mapping */
+
+.cm-keyword { color: var(--keyword); }
+.cm-operator { color: var(--operator); }
+.cm-variable { color: var(--variable); }
+.cm-variable-2 { color: var(--variable-2); }
+.cm-variable-3 { color: var(--variable-3); }
+.cm-type { color: var(--type); }
+.cm-builtin { color: var(--builtin); }
+.cm-atom { color: var(--atom); }
+.cm-number { color: var(--number); }
+.cm-def { color: var(--definition); }
+.cm-string { color: var(--string); }
+.cm-string-2 { color: var(--string-2); }
+.cm-comment { color: var(--comment); }
+.cm-tag { color: var(--tag); }
+.cm-meta { color: var(--meta); }
+.cm-attribute { color: var(--attribute); }
+.cm-property { color: var(--property); }
+.cm-qualifier { color: var(--qualifier); }
+
+/* Errors & brackets */
+
+.cm-error {
+    color: var(--error-fg);
+    background-color: var(--error-bg);
+}
+
+.CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: var(--match-bracket) !important;
+}
