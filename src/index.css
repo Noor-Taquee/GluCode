@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lilex:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/*#region animations */
 @keyframes appear {
   0% {
     transform: scale(0.8);
@@ -135,6 +136,7 @@
     opacity: 0;
   }
 }
+/*#endregion animations */
 
 #app {
   --primary-font: 400 18px Arial;
@@ -232,7 +234,7 @@ html, body {
   background: var(--secondary-bg);
 }
 
-#app.vertical #sidebar {
+[data-orientation="vertical"] #sidebar {
   position: absolute;
   z-index: 2;
   left: 0;
@@ -240,7 +242,7 @@ html, body {
   display: none;
 }
 
-#app.horizontal #sidebar {
+[data-orientation="horizontal"] #sidebar {
   display: flex !important;
 }
 
@@ -250,7 +252,7 @@ html, body {
   padding: 5px 10px;
 }
 
-#app.horizontal #close-sidebar-btn {
+[data-orientation="horizontal"] #close-sidebar-btn {
   display: none;
 }
 
@@ -408,7 +410,7 @@ html, body {
   font-size: var(--back-font-size);
 }
 
-#app.horizontal #sidebar-btn {
+[data-orientation="horizontal"] #sidebar-btn {
   display: none;
 }
 
@@ -424,7 +426,7 @@ html, body {
   background: var(--secondary-bg);
 }
 
-#app.vertical #editor-wrapper {
+[data-orientation="vertical"] #editor-wrapper {
   width: 100%;
 }
 
@@ -438,10 +440,13 @@ html, body {
   width: 100%;
   overflow: hidden;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   display: flex;
   align-items: flex-start;
-  background-color: var(--scondary-bg);
+  background-color: var(--primary-bg);
+}
+
+[data-orientation="vertical"] #main-area {
+  border-top-right-radius: 10px;
 }
 
 #app {
@@ -473,7 +478,7 @@ html, body {
   background: var(--secondary-bg);
 }
 
-#app.horizontal #utility-area {
+[data-orientation="horizontal"] #utility-area {
   display: none;
 }
 
@@ -501,11 +506,9 @@ html, body {
   flex-shrink: 0;
   height: 100%;
   width: 100%;
-  background: var(--secondary-bg);
-}
-
-#editor:focus {
   outline: none;
+  border: none;
+  background: transparent;
 }
 
 

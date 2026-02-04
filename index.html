@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CB3X8WY35"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-1CB3X8WY35');
-  </script>
   <meta name="google-site-verification" content="sCuHQ2Lt1OuPoKxz0M01KXE0nZlSZvXyjHgl6tro-54" />
   <meta charset="UTF-8">
   <meta name="description" content="An online code editor">
@@ -21,10 +12,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
-  <link rel="icon" href="src/logo.svg">
-  <link rel="manifest" href="src/site.webmanifest">
+  <link rel="icon" href="public/logo.svg">
+  <link rel="manifest" href="public/site.webmanifest">
   <title>GluCode</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="src/index.css">
   <link rel="stylesheet" href="Code Mirror/assets/code-mirror.css">
   <link rel="stylesheet" href="Code Mirror/addons/matchesonscrollbar.css">
   <link rel="stylesheet" href="Code Mirror/addons/show-hint.css">
@@ -76,14 +67,13 @@
       </div>
     </div>
   </div>
-  <script src="helper.js"></script>
   <script src="Code Mirror/assets/code-mirror.js"></script>
+  <script src="src/main.js"></script>
   <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
   <script id="cm-mode-python" src="Code Mirror/languages/python-support.js"></script>
-  <script id="cm-mode-sql" src="Code Mirror/languages/sql-support.js"></script>
-  <script src="codeMirror-5 integration.js"></script>
-  <script src="script.js"></script>
-  <script src="fileHandling.js"></script>
+  <script id="cm-mode-sql" src="Code Mirror/languages/sql-support.js"></script> -->
+  <!-- <script src="src/codeMirror-5 integration.js"></script>
+  <script src="src/fileHandling.js"></script>
 </body>
 
 </html>
