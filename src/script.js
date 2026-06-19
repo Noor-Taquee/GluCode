@@ -196,63 +196,62 @@ const settingsContent = createDiv("content", "settings-content");
 settingsMainContent.appendChild(settingsContent);
 
 // #region Theme panel
-let selectedIcon = null;
-let appliedTheme = "palenight";
+// let selectedIcon = null;
+// let appliedTheme = "palenight";
 
-settingsContent.appendChild(createButton("theme-button", "tab-btn", createIcon("bold", "palette"), "Theme", openThemePanel));
-function openThemePanel() {
-  settingsPanel.style.animation = "fade-drop 0.2s ease";
-  setTimeout(() => {
-    settingsPanel.replaceChild(themePanel, settingsMainContent);
-  }, 100);
-}
-function closeThemePanel() {
-  settingsPanel.style.animation = "fade-drop 0.2s ease";
-  setTimeout(() => {
-    settingsPanel.replaceChild(settingsMainContent, themePanel);
-  }, 100);
-}
+// settingsContent.appendChild(createButton("theme-button", "tab-btn", createIcon("bold", "palette"), "Theme", openThemePanel));
+// function openThemePanel() {
+//   settingsPanel.style.animation = "fade-drop 0.2s ease";
+//   setTimeout(() => {
+//     settingsPanel.replaceChild(themePanel, settingsMainContent);
+//   }, 100);
+// }
+// function closeThemePanel() {
+//   settingsPanel.style.animation = "fade-drop 0.2s ease";
+//   setTimeout(() => {
+//     settingsPanel.replaceChild(settingsMainContent, themePanel);
+//   }, 100);
+// }
 
-const themePanel = createDiv("content", "theme-panel");
+// const themePanel = createDiv("content", "theme-panel");
 
-const themePanelHeader = createDiv("top-bar", "theme-panel-header");
-themePanel.appendChild(themePanelHeader);
+// const themePanelHeader = createDiv("top-bar", "theme-panel-header");
+// themePanel.appendChild(themePanelHeader);
 
-const themePanelCloseBtn = createButton("theme-panel-close-btn", "toggle-btn back-btn", createIcon("bold", "arrow-left"), null, closeThemePanel);
-themePanelHeader.appendChild(themePanelCloseBtn);
+// const themePanelCloseBtn = createButton("theme-panel-close-btn", "toggle-btn back-btn", createIcon("bold", "arrow-left"), null, closeThemePanel);
+// themePanelHeader.appendChild(themePanelCloseBtn);
 
-const themePanelTitle = createTextField("tab-header-text", "Choose theme");
-themePanelHeader.appendChild(themePanelTitle);
+// const themePanelTitle = createTextField("tab-header-text", "Choose theme");
+// themePanelHeader.appendChild(themePanelTitle);
 
-const themePanelContent = createDiv("settings-content-theme-section-theme-list");
-themePanel.appendChild(themePanelContent);
+// const themePanelContent = createDiv("settings-content-theme-section-theme-list");
+// themePanel.appendChild(themePanelContent);
 
-let palenightIcon = createIcon("fill", "radio-button");
-selectedIcon = palenightIcon;
-themePanelContent.appendChild(createButton("theme-panel-theme-list-theme1", "tab-btn", palenightIcon, "Palenight", () => {
-  applyTheme("palenight", palenightIcon);
-}));
+// let palenightIcon = createIcon("fill", "radio-button");
+// selectedIcon = palenightIcon;
+// themePanelContent.appendChild(createButton("theme-panel-theme-list-theme1", "tab-btn", palenightIcon, "Palenight", () => {
+//   applyTheme("palenight", palenightIcon);
+// }));
 
-let monokaiIcon = createIcon("bold", "circle");
-themePanelContent.appendChild(createButton("theme-panel-theme-list-theme1", "tab-btn", monokaiIcon, "Monokai", () => {
-  applyTheme("monokai", monokaiIcon);
-}));
+// let monokaiIcon = createIcon("bold", "circle");
+// themePanelContent.appendChild(createButton("theme-panel-theme-list-theme1", "tab-btn", monokaiIcon, "Monokai", () => {
+//   applyTheme("monokai", monokaiIcon);
+// }));
 
-let githubDarkIcon = createIcon("bold", "circle");
-themePanelContent.appendChild(createButton("theme-panel-theme-list-theme1", "tab-btn", githubDarkIcon, "Github Dark", () => {
-  applyTheme("github-dark", githubDarkIcon);
-}));
+// let githubDarkIcon = createIcon("bold", "circle");
+// themePanelContent.appendChild(createButton("theme-panel-theme-list-theme1", "tab-btn", githubDarkIcon, "Github Dark", () => {
+//   applyTheme("github-dark", githubDarkIcon);
+// }));
 
 
-function applyTheme(theme, icon) {
-  selectedIcon.className = "ph-bold ph-circle";
-  app.classList.remove(appliedTheme);
-  selectedIcon = icon;
-  appliedTheme = theme;
-  app.classList.add(appliedTheme);
-  selectedIcon.className = "ph-fill ph-radio-button";
-}
-
+// function applyTheme(theme, icon) {
+//   selectedIcon.className = "ph-bold ph-circle";
+//   app.classList.remove(appliedTheme);
+//   selectedIcon = icon;
+//   appliedTheme = theme;
+//   app.classList.add(appliedTheme);
+//   selectedIcon.className = "ph-fill ph-radio-button";
+// }
 
 // #endregion Theme panel
 

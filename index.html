@@ -21,17 +21,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
-  <link rel="icon" href="src/logo.svg">
-  <link rel="manifest" href="src/site.webmanifest">
+  <link rel="icon" href="./public/logo.svg">
+  <link rel="manifest" href="./public/site.webmanifest">
   <title>GluCode</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="Code Mirror/assets/code-mirror.css">
-  <link rel="stylesheet" href="Code Mirror/addons/matchesonscrollbar.css">
-  <link rel="stylesheet" href="Code Mirror/addons/show-hint.css">
-  <link rel="stylesheet" href="Code Mirror/addons/dialog.css">
-  <link id="palenight" rel="stylesheet" href="Code Mirror/themes/palenight.css">
-  <link id="monokai" rel="stylesheet" href="Code Mirror/themes/monokai.css">
-  <link id="github-dark" rel="stylesheet" href="Code Mirror/themes/github-dark.css">
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/dialog/dialog.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/search/matchesonscrollbar.min.css">
 </head>
 
 <body id="app" class="palenight">
@@ -76,14 +72,14 @@
       </div>
     </div>
   </div>
-  <script src="helper.js"></script>
-  <script src="Code Mirror/assets/code-mirror.js"></script>
+  <script src="./src/helper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js""></script>
   <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
-  <script id="cm-mode-python" src="Code Mirror/languages/python-support.js"></script>
-  <script id="cm-mode-sql" src="Code Mirror/languages/sql-support.js"></script>
-  <script src="codeMirror-5 integration.js"></script>
-  <script src="script.js"></script>
-  <script src="fileHandling.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/sql/sql.min.js"></script>
+  <script src="./src/codeMirror-5 integration.js"></script>
+  <script src="./src/script.js"></script>
+  <script src="./src/fileHandling.js"></script>
 </body>
 
 </html>
